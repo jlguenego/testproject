@@ -53,3 +53,29 @@ git commit -m "initial commit"
 L'option -m permet d'indiquer un message de commit, qui est obligatoire.
 Si on fait un git status, on verra que le fichier a été commité et que tout est en ordre.
 
+```
+git status
+```
+
+Un fichier doit etre dans l'état staged pour etre commité. Ainsi si l'on modifie le fichier, il faut 
+à nouveau faire un `git add` de ce fichier.
+
+Le cycle de vie d'un fichier sous git est le suivant:
+il y a 4 états:
+- Non suivi
+- suivi et non modifié
+- suivi et modifié
+- suivi, modifié et indexé.
+
+Quand on crée un nouveau fichier <file>, il est dans l'état **Non suivi**.
+Si on fait `git add <file>`, alors il passe dans l'état "suivi, modifié et indexé".
+Si ensuite on fait un `git commit`, le fichier pass dans l'état "suivi et non modifié".
+Si on modifie le fichier, il passe dans l'état "suivi et modifié"
+Il faut faire à nouveau un `git add <file>` pour le mettre dans l'état "suivi, modifié et indexé".
+
+La commande `git status` montre l'état de chaque fichier dans le repository.
+Si le fichier est en rouge, alors c'est soit qu'il est non suivi, ou suivi et modifié.
+Il faut faire un `git add` pour l'ajouter dans le staging (=l'index).
+
+
+
