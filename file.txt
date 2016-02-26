@@ -2,4 +2,22 @@ Ceci est la première version de mon fichier.
 
 On va faire une "cheat sheet" sur git en français.
 
+Cheat sheet de git
+==================
+
+Créer un dépot (repository) git
+-------------------------------
+
+Pour partir de rien:
+
+```
+> git init
+```
+
+Ou pour cloner un dépot existant
+
+```
+> git clone
+```
+
 
