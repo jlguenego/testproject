@@ -110,6 +110,19 @@ est indiquée.
 
 Toujours utiliser `git rm` avec `-f` ou `--cached`.
 
+Regarder les diff
+-----------------
+
+```
+git diff
+```
+
+Et
+
+```
+git diff --cached
+```
+
 
 
 
