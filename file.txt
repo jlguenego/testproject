@@ -123,6 +123,21 @@ Et
 git diff --cached
 ```
 
+Regarder l'historique
+---------------------
+
+L'outil `gitk` est assez visuel:
+```
+gitk
+```
+
+Sinon, on peut faire
+```
+git log
+```
+
+
+
 
 
 
