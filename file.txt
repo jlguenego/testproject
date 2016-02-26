@@ -1,1 +1,5 @@
 Ceci est la première version de mon fichier.
+
+On va faire une "cheat sheet" sur git en français.
+
+
