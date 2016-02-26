@@ -94,7 +94,13 @@ ce qui a été mis dans le staging.
 Effacer un fichier
 ------------------
 
-Pour effacer un fichier d'un repository, il faut utiliser `git rm`.
+Pour effacer un fichier d'un repository:
+```
+git rm <file>
+```
+
+Pour effacer un fichier du staging après l'avoir modifié, il faut utiliser `git rm --cached <file>`.
+
 Il y a deux options: -f (force=effacer aussi le fichier du filesystem) et --cached (ne pas effacer le fichier du filesystem)
 
 Le fichier doit être dans l'un des trois états suivi.
@@ -102,6 +108,8 @@ Le fichier doit être dans l'un des trois états suivi.
 est indiquée.
 
 Toujours utiliser `git rm` avec `-f` ou `--cached`.
+
+
 
 
 
