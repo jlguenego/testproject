@@ -78,5 +78,24 @@ Si le fichier est en rouge, alors c'est soit qu'il est non suivi, ou suivi et mo
 Il faut faire un `git add` pour l'ajouter dans le staging (=l'index).
 La commande `git status` montre l'état du fichier en vert si il est dans le staging prêt à être commité.
 
+Attention, si on modifie le fichier après l'avoir mis dans le staging, le fichier passe à nouveau dans l'état
+*suivi et modifié*. Si on fait un commit, ce ne sera pas la dernière version qui sera commitée mais celle qui est
+dans le staging !
+
+La commande `git status` met en rouge deux états:
+- Non suivi: ROUGE
+- suivi et non modifié: NON INDIQUE
+- suivi et modifié: ROUGE
+- suivi, modifié et indexé: VERT
+
+Eviter de commiter quand il y a des choses en rouge, sinon vous ne commitez pas le snapshot, mais uniquement
+ce qui a été mis dans le staging.
+
+
+
+
+
+
+
 
 
