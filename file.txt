@@ -136,6 +136,26 @@ Sinon, on peut faire
 git log
 ```
 
+Modification du dernier commit
+------------------------------
+
+La modification du dernier commit est possible grâce à la commande `git commit --amend`:
+1) si aucun fichier n'a été rajoutés au staging, seul le commentaire sera modifiable.
+2) si des fichiers ont été rajoutés au staging, ils seront alors rajoutés au commit.
+
+Enlever un fichier du staging
+-----------------------------
+
+```
+git reset HEAD <file>
+```
+
+Revenir à la dernière version commitée d'un fichier
+---------------------------------------------------
+
+```
+git checkout -- <file>
+```
 
 
 
