@@ -20,4 +20,36 @@ Ou pour cloner un dépot existant
 > git clone
 ```
 
+Faire un premier commit
+-----------------------
+
+On crée un fichier.
+
+```
+> git status
+```
+
+On voit que le fichier apparait en rouge: il n'est pas dans le staging.
+Pour le commiter plus tard, il faut d'abord qu'il soit mis dans le staging.
+On va le mettre dans le staging avec la commande :
+
+```
+git add <file>
+```
+
+Puis quand on fait un `git status`, on verra que le fichier a été indexé dans le staging.
+Le fichier est dit "staged".
+
+```
+git status
+```
+
+Ensuite on peut le committer avec 
+
+```
+git commit -m "initial commit"
+```
+
+L'option -m permet d'indiquer un message de commit, qui est obligatoire.
+Si on fait un git status, on verra que le fichier a été commité et que tout est en ordre.
 
