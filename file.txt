@@ -76,6 +76,7 @@ Il faut faire à nouveau un `git add <file>` pour le mettre dans l'état "suivi,
 La commande `git status` montre l'état de chaque fichier dans le repository.
 Si le fichier est en rouge, alors c'est soit qu'il est non suivi, ou suivi et modifié.
 Il faut faire un `git add` pour l'ajouter dans le staging (=l'index).
+La commande `git status` montre l'état du fichier en vert si il est dans le staging prêt à être commité.
 
 
 
