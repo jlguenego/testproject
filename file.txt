@@ -91,6 +91,20 @@ La commande `git status` met en rouge deux états:
 Eviter de commiter quand il y a des choses en rouge, sinon vous ne commitez pas le snapshot, mais uniquement
 ce qui a été mis dans le staging.
 
+Effacer un fichier
+------------------
+
+Pour effacer un fichier d'un repository, il faut utiliser `git rm`.
+Il y a deux options: -f (force=effacer aussi le fichier du filesystem) et --cached (ne pas effacer le fichier du filesystem)
+
+Le fichier doit être dans l'un des trois états suivi.
+`git rm` va effacer du staging le fichier en question. Il va l'effacer aussi du filesystem si c'est l'option -f ou --force qui
+est indiquée.
+
+Toujours utiliser `git rm` avec `-f` ou `--cached`.
+
+
+
 
 
 
